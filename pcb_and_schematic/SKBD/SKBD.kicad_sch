@@ -2844,7 +2844,7 @@
 				)
 			)
 		)
-		(symbol "PCM_SL_Devices:Slide_Switch_SPDT_P3mm_10x5x10mm"
+		(symbol "PCM_SL_Devices:Push_Button"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2856,16 +2856,16 @@
 					)
 				)
 			)
-			(property "Value" "Slide_Switch_SPDT_P3mm_10x5x10mm"
-				(at -1.27 -5.08 0)
+			(property "Value" "Push_Button"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "PCM_SL_Devices:Slide_Switch_SPDT_P3mm_10x5x10mm"
-				(at 1.27 -7.62 0)
+			(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+				(at -0.127 -3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2874,15 +2874,6 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at -1.27 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "SPDT Slide Switch with 10mm length, 5mm width and 10mm hight."
 				(at 0 0 0)
 				(effects
 					(font
@@ -2891,7 +2882,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch"
+			(property "Description" "Common 6mmx6mm Push Button"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2900,9 +2891,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "Slide_Switch_SPDT_P3mm_10x5x10mm_0_1"
+			(property "ki_keywords" "Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Push_Button_0_1"
 				(circle
-					(center -2.54 0)
+					(center -1.27 0)
 					(radius 0.4579)
 					(stroke
 						(width 0)
@@ -2914,7 +2914,7 @@
 				)
 				(polyline
 					(pts
-						(xy -4.445 0) (xy -3.048 0)
+						(xy -3.175 0) (xy -1.778 0)
 					)
 					(stroke
 						(width 0)
@@ -2926,7 +2926,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 1.27 2.54)
+						(xy -1.905 1.27) (xy 1.905 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2938,7 +2938,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.778 -2.54) (xy 3.175 -2.54)
+						(xy 0 1.27) (xy 0 3.175)
 					)
 					(stroke
 						(width 0)
@@ -2950,7 +2950,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.778 2.54) (xy 3.175 2.54)
+						(xy 1.778 0) (xy 3.175 0)
 					)
 					(stroke
 						(width 0)
@@ -2961,18 +2961,7 @@
 					)
 				)
 				(circle
-					(center 1.27 -2.54)
-					(radius 0.4579)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.27 2.54)
+					(center 1.27 0)
 					(radius 0.4579)
 					(stroke
 						(width 0)
@@ -2983,9 +2972,9 @@
 					)
 				)
 			)
-			(symbol "Slide_Switch_SPDT_P3mm_10x5x10mm_1_1"
+			(symbol "Push_Button_1_1"
 				(pin passive line
-					(at -6.35 0 0)
+					(at -5.08 0 0)
 					(length 2)
 					(name ""
 						(effects
@@ -3003,7 +2992,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 0 180)
 					(length 2)
 					(name ""
 						(effects
@@ -3013,24 +3002,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1 1)
@@ -7204,6 +7175,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 337.82) (xy 220.98 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "385e56bb-4eea-4f25-9280-122a9c91ea4d")
+	)
+	(wire
+		(pts
 			(xy 229.87 236.22) (xy 229.87 245.11)
 		)
 		(stroke
@@ -8464,7 +8445,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 340.36) (xy 220.98 341.63)
+			(xy 220.98 337.82) (xy 220.98 341.63)
 		)
 		(stroke
 			(width 0)
@@ -16353,6 +16334,74 @@
 			(project "SKBD"
 				(path "/913e88b4-4e13-4946-a29a-005665cd01da"
 					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Devices:Push_Button")
+		(at 227.33 337.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b63a078-bfb9-4fee-b3cc-562056879f2b")
+		(property "Reference" "SW12"
+			(at 227.33 330.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Push_Button"
+			(at 227.33 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-various:SW_SPST_SKQG_WithStem"
+			(at 227.203 340.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Profile Switch"
+			(at 227.33 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ea7c874-d25f-4e64-ae70-f2b9d94e64c4")
+		)
+		(pin "2"
+			(uuid "1f8cc3f5-bc3a-4f07-8de5-f6d7351dc6fc")
+		)
+		(instances
+			(project ""
+				(path "/913e88b4-4e13-4946-a29a-005665cd01da"
+					(reference "SW12")
 					(unit 1)
 				)
 			)
@@ -25058,77 +25107,6 @@
 			(project "SKBD"
 				(path "/913e88b4-4e13-4946-a29a-005665cd01da"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_SL_Devices:Slide_Switch_SPDT_P3mm_10x5x10mm")
-		(at 226.06 337.82 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "daabac91-7eb6-452f-b9a8-8483a923c30f")
-		(property "Reference" "SW12"
-			(at 226.695 330.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Slide_Switch_SPDT_P3mm_10x5x10mm"
-			(at 226.695 332.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_SL_Devices:Slide_Switch_SPDT_P3mm_10x5x10mm"
-			(at 224.79 330.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 344.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SPDT Slide Switch with 10mm length, 5mm width and 10mm hight."
-			(at 226.06 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b11946f8-dbfb-427c-81b3-349f3bd9f3d2")
-		)
-		(pin "3"
-			(uuid "36ec37d1-fd01-4668-8f25-0e0debcf03c6")
-		)
-		(pin "2"
-			(uuid "a20997f7-03b3-4ff8-a017-12f5447dc746")
-		)
-		(instances
-			(project ""
-				(path "/913e88b4-4e13-4946-a29a-005665cd01da"
-					(reference "SW12")
 					(unit 1)
 				)
 			)
