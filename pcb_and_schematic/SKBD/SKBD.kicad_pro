@@ -697,11 +697,11 @@
         "pattern": "VBUS"
       },
       {
-        "netclass": "USB_DIFF_90",
+        "netclass": "Default",
         "pattern": "/USB_D+"
       },
       {
-        "netclass": "USB_DIFF_90",
+        "netclass": "Default",
         "pattern": "/USB_D-"
       }
     ]
