@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "random-keyboard-parts")(type "KiCad")(uri "/home/ukimnix/Archive/Projects/skbd/random-keyboard-parts.pretty")(options "")(descr ""))
+)
